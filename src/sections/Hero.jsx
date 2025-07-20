@@ -1,9 +1,4 @@
-import React from "react";
-
-const words = [
-    {text: 'Ideas', imgPath: '/images/ideas.svg'},
-    {text: 'Concepts', imgPath: '/images/concepts.svg'},
-]
+import { words } from "../constants/index.js";
 
 const Hero = () => {
     return(
@@ -27,6 +22,8 @@ const Hero = () => {
                                                     alt={word.text}
                                                     className="xl:size-12 md:size-10 md-size-7 md:pd-2 p-1 rounded-full bg-white-50" 
                                                 />
+
+                                                <span>{word.text}</span>
                                             </span>
                                         ))}
                                     </span>
