@@ -62,7 +62,7 @@ export function Room(props) {
       <mesh
         ref={screensRef}
         geometry={nodes.emis_lambert1_0.geometry}
-        material={materials.lambert1}
+        material={materials.blinn1}
       />
       <mesh
         geometry={nodes.handls_blinn1_0.geometry}

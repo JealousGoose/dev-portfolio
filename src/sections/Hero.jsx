@@ -4,6 +4,7 @@ import HeroExperience from "../components/Heromodels/HeroExperience.jsx";
 import { words } from "../constants/index.js";
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
+import ShowcaseSection from "./ShowcaseSection.jsx";
 
 const Hero = () => {
     
@@ -72,12 +73,13 @@ const Hero = () => {
 
                 <figure>
                     <div className="hero-3d-layout">
-                        <HeroExperience/>
+                        
                     </div>
                 </figure>
 
             </div>
             <AnimatedCounter/>
+            <ShowcaseSection/>
         </section>
     )
 }
