@@ -11,14 +11,14 @@ import Contact from "./sections/Contact";
 const App = ()=> {
     return (
         <>
-            {/** <NavBar/>
+            <NavBar/>
             <Hero/>
             <ShowcaseSection/>
             <LogoSection/>
             <FeatureCards/>
             <ExperienceSection/>
             <TechStack/>
-            <Testimonials/> **/}
+            <Testimonials/>
             <Contact/>
             
         </>
