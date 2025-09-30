@@ -18,21 +18,21 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Data", imgPath: "/images/pie-chart.png" },
+  { text: "Creativity", imgPath: "/images/concepts.svg" },
+  { text: "Strategy", imgPath: "/images/designs.svg" },
+  { text: "Growth", imgPath: "/images/code.svg" },
+  { text: "Data", imgPath: "/images/pie-chart.png" },
+  { text: "Creativity", imgPath: "/images/concepts.svg" },
+  { text: "Strategy", imgPath: "/images/designs.svg" },
+  { text: "Growth", imgPath: "/images/code.svg" },
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: "50+",  label: "Clients Served" },
+  { value: "$100K+", label: "Ad Spend" },
+  { value: "Upto 50x",      label: "max ROAS" },
+  { value: "50k+",     label: "Leads Generated" },
 ];
 
 const logoIconsList = [
@@ -73,42 +73,47 @@ const logoIconsList = [
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/coin.png",
+    title: "Results-Oriented",
+    desc: "I build measurable acquisition systems that transition marketing from guesswork to a scalable, predictable project, focused entirely on profit margin.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Reliable Communication and Reporting",
+    desc: "Transparent communication and regular reporting to keep you updated on the progress of your campaign.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    imgPath: "/images/market-share.png",
+    title: "Continuous Market Adaptation",
+    desc: "My strategy includes a rigorous research loop that monitors platform changes, competitor shifts, and emerging creative trends.",
   },
 ];
 
 const techStackImgs = [
   {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
+    name: "Meta Ads",
+    imgPath: "/images/meta.png",
+    scale: 0.8,
   },
   {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
+    name: "Google Ads",
+    imgPath: "/images/adwords.png",
+    scale: 0.7,
   },
   {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    name: "Sales Funnel",
+    imgPath: "/images/sales-funnel.png",
+    scale: 0.7,
   },
   {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
+    name: "Web Apps With AI",
+    imgPath: "/images/code.png",
+    scale: 0.75,
   },
   {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+    name: "Marketing Analytics",
+    imgPath: "/images/analytics.png",
+    scale: 0.7,
   },
 ];
 
@@ -147,7 +152,7 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Shital brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "Reyan brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "Frontend Developer",
@@ -159,7 +164,7 @@ const expCards = [
     ],
   },
   {
-    review: "Shital’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Reyan’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "Full Stack Developer",
@@ -171,7 +176,7 @@ const expCards = [
     ],
   },
   {
-    review: "Shital’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review: "Reyan’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     title: "React Native Developer",
@@ -204,42 +209,42 @@ const testimonials = [
     name: "Esther Howard",
     mentions: "@estherhoward",
     review:
-      "I can’t say enough good things about Shital. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I can’t say enough good things about Reyan. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
     imgPath: "/images/client1.png",
   },
   {
     name: "Wade Warren",
     mentions: "@wadewarren",
     review:
-      "Working with Shital was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Working with Reyan was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
     imgPath: "/images/client3.png",
   },
   {
     name: "Guy Hawkins",
     mentions: "@guyhawkins",
     review:
-      "Collaborating with Shital was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Shital's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Shital is the ideal partner.",
+      "Collaborating with Reyan was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Reyan's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Reyan is the ideal partner.",
     imgPath: "/images/client2.png",
   },
   {
     name: "Marvin McKinney",
     mentions: "@marvinmckinney",
     review:
-      "Shital was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "Reyan was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
     imgPath: "/images/client5.png",
   },
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
     review:
-      "Shital’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Reyan’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
     imgPath: "/images/client4.png",
   },
   {
     name: "Albert Flores",
     mentions: "@albertflores",
     review:
-      "Shital was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Reyan was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
     imgPath: "/images/client6.png",
   },
 ];

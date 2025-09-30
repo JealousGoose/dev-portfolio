@@ -49,16 +49,23 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img src="/images/case_study.png" alt="Ryde App Interface" />
+              <a
+                className="download-btn"
+                href="/images/case_study.png"
+                download="case_study.png"
+                aria-label="Download case study image"
+                title="Download"
+              >
+                <img src="/images/arrow-down.svg" alt="Download" />
+              </a>
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Performance Scaling: Reducing Cost Per Qualified Lead by 40% Across Nepal's Top Colleges
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+              Implemented a systematic testing protocol to eliminate poor leads, ensuring a lower average Cost Per Result and a 30% lift in overall lead efficiency.
               </p>
             </div>
           </div>
@@ -67,16 +74,34 @@ const AppShowcase = () => {
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
-                  src="/images/project2.png"
+                  src="/images/case_study2.png"
                   alt="Library Management Platform"
                 />
+                <a
+                  className="download-btn"
+                  href="/images/project2.png"
+                  download="project2.png"
+                  aria-label="Download project image"
+                  title="Download"
+                >
+                  <img src="/images/arrow-down.svg" alt="Download" />
+                </a>
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Cost per result decrease of Mumbuds Nepal: Sales Campaign</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
                 <img src="/images/project3.png" alt="YC Directory App" />
+                <a
+                  className="download-btn"
+                  href="/images/project3.png"
+                  download="project3.png"
+                  aria-label="Download project image"
+                  title="Download"
+                >
+                  <img src="/images/arrow-down.svg" alt="Download" />
+                </a>
               </div>
               <h2>YC Directory - A Startup Showcase App</h2>
             </div>

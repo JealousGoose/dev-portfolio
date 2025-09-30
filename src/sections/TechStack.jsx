@@ -27,8 +27,8 @@ const TechStack = () => {
     <div id="skills" className="flex-center section-padding">
       <div className="w-full h-full md:px-10">
         <TitleHeader
-          title="My preferred Tech Stack"
-          sub="The Skills I bring to the Table"
+          title="My Skills"
+          sub="The Skills that I bring to the table"
         />
 
         <div className="tech-grid">
@@ -55,7 +55,7 @@ const TechStack = () => {
                 <div className="tech-card-animated-bg"/>
                 <div className="tech-card-content">
                     <div className="tech-icon-wrapper">
-                        <img src={icon.imgPath} />
+                        <img src={icon.imgPath} style={{ transform: `scale(${icon.scale ?? 1})` }} />
                     </div>
                     <div className="padding-x w-full">
                         <p>

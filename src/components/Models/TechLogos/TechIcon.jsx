@@ -5,7 +5,7 @@
 // optionally tweak the material (like setting a white color on a specific mesh)
 // disable zoom using orbitcontrols
 
-import { Environment, Float, OrbitControls, useGLTF } from "@react-three/drei";
+import { useGLTF, Environment } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useEffect } from "react";
 import { color } from "three/tsl";
@@ -25,20 +25,14 @@ const TechIcon = ({model}) => {
     }, [scene])
 
     return (
-        <Canvas>
-            <ambientLight intensity={0.3} />
-            <directionalLight position={[5, 5, 5]} intensity={1}/>
-            <Environment preset="city"/>
-
-            <OrbitControls enableZoom={false}/>
-
-            <Float speed={0.5} rotationIntensity={0.5} floatIntensity={0.9}>
-                <group scale={model.scale} rotation={model.rotation}>
-                    <primitive object={scene.scene}>
-
-                    </primitive>
-                </group>
-            </Float>
+        <Canvas dpr={[1, 1.5]} gl={{ antialias: true, powerPreference: 'high-performance' }} frameloop="demand">
+            <ambientLight intensity={0.4} />
+            <directionalLight position={[3, 5, 5]} intensity={0.6}/>
+            <Environment preset="city" background={false} blur={0.4} resolution={32} />
+            <group scale={model.scale} rotation={model.rotation}>
+                <primitive object={scene.scene}>
+                </primitive>
+            </group>
         </Canvas>
     )
 }

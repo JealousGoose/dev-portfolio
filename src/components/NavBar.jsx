@@ -21,7 +21,7 @@ const NavBar = () => {
             <div className="inner">
 
                 <a href="#hero" className="logo">
-                    Shital Ghimire
+                    Reyan Ghimire
                 </a>
 
                 <nav className="desktop">

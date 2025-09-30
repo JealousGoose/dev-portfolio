@@ -1,11 +1,9 @@
 import React, { useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
-import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
-import { BlendFunction } from "postprocessing";
 import * as THREE from "three";
 
 export function Room(props) {
-  const { nodes, materials } = useGLTF("/models/optimized-room.glb");
+  const { nodes, materials } = useGLTF("/models/modified_meta.glb");
   const screensRef = useRef();
   const matcapTexture = useTexture("/images/textures/mat1.png");
 
@@ -39,15 +37,6 @@ export function Room(props) {
 
   return (
     <group {...props} dispose={null}>
-      <EffectComposer>
-        <SelectiveBloom
-          selection={screensRef}
-          intensity={1.5} // Strength of the bloom
-          luminanceThreshold={0.2} // Minimum luminance needed
-          luminanceSmoothing={0.9} // Smooth transition
-          blendFunction={BlendFunction.ADD} // How it blends
-        />
-      </EffectComposer>
       <mesh
         geometry={nodes._________6_blinn1_0.geometry}
         material={curtainMaterial}
@@ -169,4 +158,4 @@ export function Room(props) {
   );
 }
 
-useGLTF.preload("/models/optimized-room.glb");
+useGLTF.preload("/models/modified_meta.glb");

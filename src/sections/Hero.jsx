@@ -4,7 +4,6 @@ import HeroExperience from "../components/Heromodels/HeroExperience.jsx";
 import { words } from "../constants/index.js";
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
-import ShowcaseSection from "./ShowcaseSection.jsx";
 
 const Hero = () => {
     
@@ -26,6 +25,7 @@ const Hero = () => {
 
     return(
         <section id="hero" className="relative overflow-hidden">
+            <div className="hero-blue-glow" />
             <div className="absolute top-0 left-0 z-10">
                 <img src="/images/bg.png" alt="background"/>
             </div>
@@ -35,7 +35,9 @@ const Hero = () => {
                     <div className="flex flex-col gap-7">
                         <div className="hero-text">
                             <h1>
-                                Shaping
+                                It starts 
+                                <br/>
+                                with
                                 <span className="slide">
                                     <span className="wrapper">
                                         {words.map((word) => (
@@ -53,14 +55,11 @@ const Hero = () => {
                                 </span>
                             </h1>
                             <h1>
-                                into real projects
-                            </h1>
-                            <h1>
-                                that Deliver Results
+                                & Ends with Results 
                             </h1>
                         </div>
-                        <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                            Hi, I'm Shital, a developer based in Nepal 🇳🇵 with a passion for learning new things.
+                        <p className="text-white-50 md:text-xl relative z-10 pointer-events-none" style={{lineHeight: '1.8'}}>
+                            Hi, I'm Reyan, a Meta Ads specialist from Nepal. I build campaigns that convert.
                         </p>
 
                         <Button
@@ -73,7 +72,8 @@ const Hero = () => {
 
                 <figure>
                     <div className="hero-3d-layout">
-                        
+                        <div className="hero-3d-glow" />
+                        <HeroExperience/>
                     </div>
                 </figure>
 
