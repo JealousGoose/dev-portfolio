@@ -4,8 +4,10 @@ import HeroExperience from "../components/Heromodels/HeroExperience.jsx";
 import { words } from "../constants/index.js";
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
+import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
+    const isTabletOrDesktop = useMediaQuery({ query: "(min-width: 768px)" });
     
     useGSAP(() => {
         gsap.fromTo('.hero-text h1', 
@@ -70,12 +72,25 @@ const Hero = () => {
                     </div>
                 </header>
 
-                <figure>
-                    <div className="hero-3d-layout">
-                        <div className="hero-3d-glow" />
-                        <HeroExperience/>
-                    </div>
-                </figure>
+                {isTabletOrDesktop ? (
+                    <figure>
+                        <div className="hero-3d-layout">
+                            <div className="hero-3d-glow" />
+                            <HeroExperience/>
+                        </div>
+                    </figure>
+                ) : (
+                    <figure>
+                        <div className="hero-mobile-layout">
+                            <div className="hero-mobile-glow" />
+                            <img 
+                                src="/images/meta_logo-min.png" 
+                                alt="Meta Logo" 
+                                className="hero-mobile-logo"
+                            />
+                        </div>
+                    </figure>
+                )}
 
             </div>
             <AnimatedCounter/>
@@ -84,3 +99,4 @@ const Hero = () => {
 }
 
 export default Hero;
+

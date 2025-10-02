@@ -1,8 +1,11 @@
 import { useState } from "react";
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/ContactExperience";
+import { useMediaQuery } from "react-responsive";
 
 const Contact = () => {
+    const isTabletOrDesktop = useMediaQuery({ query: "(min-width: 768px)" });
+    
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -27,7 +30,7 @@ const Contact = () => {
         <section id="contact" className="flex-center section-padding">
             <div className="w-full h-full md:px-10">
                 <TitleHeader 
-                    title="Let's Work Together"
+                    title="Got a Project?"
                     sub="📬 Get In Touch"
                 />
                 
@@ -103,11 +106,13 @@ const Contact = () => {
                     </div>
 
                     {/* Contact Experience - Right Side */}
-                    <div className="lg:col-span-7 min-h-96">
-                        <div className="w-full h-full bg-[#cd7c2e] hover:cursor-grab rounded-2xl overflow-hidden">
-                            <ContactExperience />
+                    {isTabletOrDesktop && (
+                        <div className="lg:col-span-7 min-h-96">
+                            <div className="w-full h-full bg-[#cd7c2e] hover:cursor-grab rounded-2xl overflow-hidden">
+                                <ContactExperience />
+                            </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             </div>
         </section>
